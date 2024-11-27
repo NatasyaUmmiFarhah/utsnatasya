@@ -1,0 +1,576 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD54F;
+}
+
+/* Main Styling */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Styling */
+.intro, .about, .contact, .register, .gallery {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2E7D32;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #FFD54F;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* Gallery Styling */
+.gallery .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.gallery .images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4CAF50;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2E7D32;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+/* Layout Container */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 1rem;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    color: #2E7D32;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #FFD54F;
+    padding-bottom: 0.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 0.5rem 0;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Clock Styling */
+.clock {
+    text-align: center;
+    margin-top: 2rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#current-time {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+/* Video Styling */
+.video {
+    margin-top: 2rem;
+    text-align: center;
+}
+/* About Section Styling */
+.about {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    text-align: center;
+    color: #2E7D32;
+    margin-bottom: 2rem;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    margin-bottom: 1rem;
+}
+
+.dropdown-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background-color: #2E7D32;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.dropdown-content ul {
+    padding-left: 1.5rem;
+}
+
+.dropdown-content ul li {
+    list-style: disc;
+    margin: 0.5rem 0;
+}
+/* Gallery Section */
+.gallery {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #2E7D32;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(30% - 1rem);
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.gallery-item p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    text-align: center;
+    color: #2E7D32;
+    margin-bottom: 2rem;
+}
+
+/* Contact Info */
+.contact-info p, .contact-info ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 0.5rem 0;
+}
+
+.contact-info ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #4CAF50;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #2E7D32;
+}
+/* Banner Carousel Styling */
+.banner-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container {
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 300px; /* Sesuaikan tinggi banner */
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+/* Registrasi Form Styling */
+.registration {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration h2 {
+    margin-bottom: 1rem;
+    color: #4CAF50;
+    text-align: center;
+}
+
+.registration p {
+    margin-bottom: 2rem;
+    color: #666;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+/* Section for Cow Types */
+.cow-types {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cow-types h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+.cow-types p {
+    margin-bottom: 2rem;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.cow-card {
+    display: inline-block;
+    width: 280px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.cow-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.cow-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.cow-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.cow-card:hover {
+    transform: scale(1.05);
+}

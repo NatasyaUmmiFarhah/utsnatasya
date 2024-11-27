@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi - Kandang Sapi Baldes</title>
+    <link rel="stylesheet" href="nata.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="/www/latihan/img/logo.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Kandang Sapi Baldes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+                <li><a href="register.html"><i class="fas fa-user-plus"></i> Registrasi</a></li>
+                <li><a href="jenis.html"><i class="fas fa-cow"></i> Jenis Sapi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="registration">
+            <h2>Formulir Kunjungan</h2>
+            <p>Isi formulir di bawah ini untuk kunjungan anda.</p>
+            <form action="submit_registration.php" methoSd="POST">
+                <div class="form-group">
+                    <label for="fullname">Nama Lengkap</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Masukkan nama lengkap Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Jenis Kelamin</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Pilih jenis kelamin</option>
+                        <option value="male">Laki-Laki</option>
+                        <option value="female">Perempuan</option>
+                        <option value="other">Lainnya</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" placeholder="Buat kata sandi" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Konfirmasi Kata Sandi</label>
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Ulangi kata sandi" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Alamat</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Masukkan alamat Anda"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Daftar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kandang Sapi. All rights reserved. Design by Natashafrhh</p>
+    </footer>
+</body>
+</html>
